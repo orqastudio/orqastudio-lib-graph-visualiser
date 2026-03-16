@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: read
+  packages: read
 
 jobs:
   build:
@@ -21,4 +22,6 @@ jobs:
           scope: "@orqastudio"
           cache: npm
       - run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: npm run build
