@@ -1,6 +1,6 @@
 {
   "name": "@orqastudio/graph-visualiser",
-  "version": "0.1.0-pre",
+  "version": "0.1.0-dev",
   "description": "Graph visualisation, topology analysis, and layout engine for OrqaStudio",
   "type": "module",
   "main": "dist/index.js",
@@ -23,9 +23,11 @@
     "build": "tsc",
     "check": "tsc --noEmit"
   },
-  "files": ["dist/"],
+  "files": [
+    "dist/"
+  ],
   "dependencies": {
-    "@orqastudio/types": "dev",
+    "@orqastudio/types": "0.1.0-dev",
     "cytoscape": "^3.33.1"
   },
   "peerDependencies": {
